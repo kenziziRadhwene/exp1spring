@@ -29,7 +29,7 @@ pipeline {
         stage("Run docker compose") {
             steps {
                 dir("exp1spring") {
-                    sh "docker-compose up -d"
+                    sh "docker-compose.yml up -d"
                 }
             }
         }
